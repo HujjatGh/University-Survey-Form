@@ -1,218 +1,193 @@
-<div class="container">
-	<header class="header">
-		<h1 id="title" class="text-center">Teaching Quality Survey Form</h1>
-			<p id="description" class="description text-center"> 
-			Thank you for taking the time to help us improve the platform </p>
-	</header>
-	<form id="survey-form">
-		<div class="form-group">
-			<label id="name-label" for="name">Name</label>
-			<input
-				type="text"
-				name="name"
-				id="name"
-				class="form-control"
-				placeholder="Enter your name"
-				required
-			/>
-		</div>
-		<div class="form-group">
-			<label id="email-label" for="email">Email</label>
-			<input 
-				type="email"
-				name="email"
-				id="email"
-				class="form-control"
-				placeholder="Enter your Email"
-				required
-			/>
-		</div>
-		<div class="form-group">
-			<label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-			<input
-				type="number"
-				name="age"
-				id="number"
-				min="10"
-				max="99"
-				class="form-control"
-				placeholder="Age"
-			/>
-		</div>
-		<div class="form-group">
-			<p> Which option best describes your current role at this university?</p>
-			<select id="dropdown"	name="role" class="form-control" required>
-				<option disabled selected value>Select current role</option>
-				<option value="student">Student</option>
-				<option value=job">Staff</option>
-				<option value="intern">Intern</option>
-				<option value="preferNo">Prefer not to say</option>
-				<option value="other">Other</option>
-			</select>
-		</div>
-		<div class="form-group">
-      		<p>Would you recommend this university to a friend?</p>
-      <label>
-        <input
-          name="user-recommend"
-          value="definitely"
-          type="radio"
-          class="input-radio"
-          checked
-        />Definitely</label
-      >
-      <label>
-        <input
-          name="user-recommend"
-          value="maybe"
-          type="radio"
-          class="input-radio"
-        />Maybe</label
-      >
-
-      <label
-        ><input
-          name="user-recommend"
-          value="not-sure"
-          type="radio"
-          class="input-radio"
-        />Not sure</label
-      >
-    </div>
-
-    <div class="form-group">
-      <p>
-        What is your favorite feature of the Complutense University?
-      </p>
-      <select id="most-like" name="mostLike" class="form-control" required>
-        <option disabled selected value>Select an option</option>
-        <option value="staff">Staff</option>
-        <option value="atmosphere">Atmosphere</option>
-        <option value="level">Education Level</option>
-        <option value="students">Students</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <p>
-        What would you like to see improved?
-        <span class="clue">(Check all that apply)</span>
-      </p>
-
-      <label
-        ><input
-          name="prefer"
-          value="teacher-turnover"
-          type="checkbox"
-          class="input-checkbox"
-        />Teacher Turnover</label
-      >
-      <label>
-        <input
-          name="prefer"
-          value="facilities"
-          type="checkbox"
-          class="input-checkbox"
-        />Facilities</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="campus-garden"
-          type="checkbox"
-          class="input-checkbox"
-        />Campus Garden</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="library"
-          type="checkbox"
-          class="input-checkbox"
-        />Library</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="wifi-access"
-          type="checkbox"
-          class="input-checkbox"
-        />WiFi Access</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="consulting-services"
-          type="checkbox"
-          class="input-checkbox"
-        />Consulting Services</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="tech"
-          type="checkbox"
-          class="input-checkbox"
-        />Technology and Innovation</label
-      >
-  
-      <label
-        ><input
-          name="prefer"
-          value="other"
-          type="checkbox"
-          class="input-checkbox"
-        />other</label
-      >
-    </div>	
-	<div class="form-group">
-      <p>Any comments or suggestions?</p>
-      <textarea
-        id="comments"
-        class="input-textarea"
-        name="comment"
-        placeholder="Enter your comment here..."
-      ></textarea>
-    </div>
-
-    <div class="form-group">
-      <button type="submit" id="submit" class="submit-button">
-        Submit
-      </button>
-    </div>
-  </form>
-</div>		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Teaching Quality Survey Form</title>
+   </head>
+   <body>
+      <main>
+         <div class="container">
+            <header class="header">
+               <h1 id="title" class="text-center">Teaching Quality Survey Form</h1>
+               <p id="description" class="description text-center"> 
+                  Thank you for taking the time to help us improve the platform 
+               </p>
+            </header>
+            <form id="survey-form">
+               <div class="form-group">
+                  <label id="name-label" for="name">Name</label>
+                  <input
+                     type="text"
+                     name="name"
+                     id="name"
+                     class="form-control"
+                     placeholder="Enter your name"
+                     required
+                     />
+               </div>
+               <div class="form-group">
+                  <label id="email-label" for="email">Email</label>
+                  <input 
+                     type="email"
+                     name="email"
+                     id="email"
+                     class="form-control"
+                     placeholder="Enter your Email"
+                     required
+                     />
+               </div>
+               <div class="form-group">
+                  <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                  <input
+                     type="number"
+                     name="age"
+                     id="number"
+                     min="10"
+                     max="99"
+                     class="form-control"
+                     placeholder="Age"
+                     />
+               </div>
+               <fieldset>
+                  <div class="form-group">
+                     <p> Which option best describes your current role at this university?</p>
+                     <select id="dropdown"	name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Staff</option>
+                        <option value="intern">Intern</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                     </select>
+                  </div>
+               </fieldset>
+               <div class="form-group">
+                  <p>Would you recommend this university to a friend?</p>
+                  <label>
+                  <input
+                     name="user-recommend"
+                     value="definitely"
+                     type="radio"
+                     class="input-radio"
+                     checked
+                     />Definitely</label
+                     >
+                  <label>
+                  <input
+                     name="user-recommend"
+                     value="maybe"
+                     type="radio"
+                     class="input-radio"
+                     />Maybe</label
+                     >
+                  <label
+                     ><input
+                     name="user-recommend"
+                     value="not-sure"
+                     type="radio"
+                     class="input-radio"
+                     />Not sure</label
+                     >
+               </div>
+               <fieldset>
+                  <div class="form-group">
+                     <p>What is your favorite feature of the Complutense University?</p>
+                     <select id="most-like" name="mostLike" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="staff">Staff</option>
+                        <option value="atmosphere">Atmosphere</option>
+                        <option value="level">Education Level</option>
+                        <option value="students">Students</option>
+                        <option value="other">Other</option>
+                     </select>
+                  </div>
+               </fieldset>
+               <div class="form-group">
+                  <p>
+                     What would you like to see improved?
+                     <span class="clue">(Check all that apply)</span>
+                  </p>
+                  <label
+                     ><input
+                     name="prefer"
+                     value="teacher-turnover"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Teacher Turnover</label
+                     >
+                  <label>
+                  <input
+                     name="prefer"
+                     value="facilities"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Facilities</label
+                     >
+                  <label
+                     ><input
+                     name="prefer"
+                     value="campus-garden"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Campus Garden</label
+                     >
+                  <label
+                     ><input
+                     name="prefer"
+                     value="library"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Library</label
+                     >
+                  <label
+                     ><input
+                     name="prefer"
+                     value="wifi-access"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />WiFi Access</label
+                     >
+                  <label
+                     ><input
+                     name="prefer"
+                     value="consulting-services"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Consulting Services</label
+                     >
+                  <label
+                     ><input
+                     name="prefer"
+                     value="tech"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Technology and Innovation</label
+                     >
+                  <label
+                     ><input
+                     name="prefer"
+                     value="other"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />other</label
+                     >
+               </div>
+               <div class="form-group">
+                  <p>Any comments or suggestions?</p>
+                  <textarea
+                     id="comments"
+                     class="input-textarea"
+                     name="comment"
+                     placeholder="Enter your comment here..."
+                     ></textarea>
+               </div>
+               <div class="form-group">
+                  <input type="submit" value="Submit">
+               </div>
+            </form>
+         </div>
+      </main>
+   </body>
+</html>
